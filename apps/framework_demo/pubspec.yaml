@@ -1,0 +1,124 @@
+name: framework_demo
+description: Digital foundation framework for developing flutter apps
+publish_to: none
+version: 0.1.0
+environment:
+  sdk: 3.2.3
+dependencies:
+  flutter:
+    sdk: flutter
+  faker: ^2.1.0
+  provider: ^6.0.5
+  camera: ^0.10.5+5
+  firebase_core: ^2.15.1
+  firebase_messaging: ^14.7.5
+  path_provider: ^2.1.1
+  demo_di:
+    path: ../../features/demo_di
+  analytics:
+    path: ../../features/analytics
+  device_features:
+    path: ../../features/device_features
+  home:
+    path: ../../features/home
+  network:
+    path: ../../features/network
+  storage:
+    path: ../../features/storage
+  uikit:
+    path: ../../features/uikit
+  demo_cipher:
+    path: ../../features/demo_cipher
+  shared:
+    path: ../../features/shared
+  security:
+    path: ../../features/security
+  data_pass:
+    path: ../../features/data_pass
+  feature_flag:
+    path: ../../features/feature_flag
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  tcs_dff_network:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_network/
+  tcs_dff_route:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_route/
+  tcs_dff_core:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_core/
+  tcs_dff_design_system:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_design_system/
+  tcs_dff_di:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_di/
+  tcs_dff_cipher:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_cipher/
+  tcs_dff_device_feature:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_device_feature/
+  tcs_dff_storage:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_storage/
+  tcs_dff_security:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_security/
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+dependency_overrides:
+  tcs_dff_core:
+    path: ../../packages/tcs_dff_core
+  tcs_dff_design_system:
+    path: ../../packages/tcs_dff_design_system
+  tcs_dff_shared_library:
+    path: ../../packages/tcs_dff_shared_library
+  tcs_dff_storage:
+    path: ../../packages/tcs_dff_storage
+  tcs_dff_types:
+    path: ../../packages/tcs_dff_types
+  tcs_dff_analytics:
+    path: ../../packages/tcs_dff_analytics
+  tcs_dff_di:
+    path: ../../packages/tcs_dff_di
+  tcs_dff_network:
+    path: ../../packages/tcs_dff_network
+  tcs_dff_device_feature:
+    path: ../../packages/tcs_dff_device_feature
+  tcs_dff_route:
+    path: ../../packages/tcs_dff_route
+  tcs_dff_tools:
+    path: ../../packages/tcs_dff_tools
+  tcs_dff_cms:
+    path: ../../packages/tcs_dff_cms
+  tcs_dff_feature_flag:
+    path: ../../packages/tcs_dff_feature_flag
+  flutter_lints: ^2.0.0
+flutter:
+  uses-material-design: true
+  assets: [packages/shared/lib/resource/strings/]
+homepage: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git

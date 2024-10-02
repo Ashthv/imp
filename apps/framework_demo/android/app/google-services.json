@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "564578576176",
+    "project_id": "productdemo-eac5c",
+    "storage_bucket": "productdemo-eac5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564578576176:android:30f030deec30e2b2598af5",
+        "android_client_info": {
+          "package_name": "com.example.framework_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB28hWBOl3ZRJp8gr-JV9ZewhZhoMCloHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
