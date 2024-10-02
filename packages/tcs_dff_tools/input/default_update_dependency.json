@@ -1,0 +1,10 @@
+{   
+    "projectRoot": "<path to project root director>",
+    "dependencies": [
+      {"name": "name of lib", "version": "^4.8.0"}
+    ],
+    "environment": [
+        {"name": "sdk", "version": "3.2.3"},
+        {"name": "flutter", "version": "3.16.5"}
+      ]
+  }

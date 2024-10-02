@@ -1,0 +1,76 @@
+name: data_pass
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: 3.16.5
+dependencies:
+  flutter:
+    sdk: flutter
+  mobx: ^2.3.0+1
+  flutter_mobx: ^2.2.0+2
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  tcs_dff_network:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_network/
+  tcs_dff_route:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_route/
+  tcs_dff_core:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_core/
+  tcs_dff_di:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_di/
+  tcs_dff_cipher:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_cipher/
+  tcs_dff_design_system:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_design_system/
+  tcs_dff_device_feature:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_device_feature/
+  tcs_dff_storage:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_storage/
+  tcs_dff_security:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_security/
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.8
+  mobx_codegen: ^2.6.0+1
+dependency_overrides:
+  tcs_dff_route:
+    path: ../../packages/tcs_dff_route
+  tcs_dff_design_system:
+    path: ../../packages/tcs_dff_design_system
+  tcs_dff_types:
+    path: ../../packages/tcs_dff_types
+flutter: 

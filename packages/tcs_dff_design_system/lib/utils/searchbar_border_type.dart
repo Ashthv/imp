@@ -1,0 +1,4 @@
+enum SearchbarBorderType {
+  border,
+  borderless
+}

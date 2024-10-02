@@ -1,0 +1,42 @@
+{
+  "featureSpec":{
+    "featureName":"starter_kit_demo",
+    "outputPath":"/Users/a843010/Documents/projects/SBI-YONO/tcs_dff_flutter/tcs_dff_flutter/features/home/lib/"
+  },
+  "viewSpec":{
+    "className":"SimSelectionModule",
+    "stateLess":true
+  },
+  "apiSpec":{
+    "className":"LoginService",
+    "apiFunction": {
+      "functionName":"doUserLogin",
+      "functionParams":[{
+        "type":"String",
+        "name":"userName"
+     }],
+     "returnObject":"LoginResponse"
+    },
+    "url":"/dologin"
+  },
+  "storeSpec": {
+    "className":"LoginStoreImpl",
+    "storeFunction":{
+      "functionName":"doUserLogin",
+      "observers":[{
+        "type":"String",
+        "name":"example"
+     }],
+      "functionParams":[{
+        "type":"LoginAPI",
+        "name":"api"
+     },{
+        "type":"bool",
+        "name":"isLogin"
+     }]
+    },
+    "apiFunctionCall":"doLogin"
+  }
+  
+
+}

@@ -1,0 +1,35 @@
+name: tcs_dff_widgetbook
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: '>=3.16.5'
+dependencies:
+  flutter:
+    sdk: flutter
+  widgetbook_annotation: 3.1.0
+  widgetbook: 3.7.1
+  tcs_dff_route:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_route/
+  tcs_dff_design_system:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_design_system/
+dependency_overrides:
+  tcs_dff_design_system:
+    path: ../../packages/tcs_dff_design_system
+  tcs_dff_route:
+    path: ../../packages/tcs_dff_route
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  widgetbook_generator: ^3.7.0
+  build_runner: ^2.4.7
+flutter: 

@@ -1,0 +1,14 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="check_circle">
+<g clip-path="url(#clip0_5036_6781)">
+<rect x="1.5" y="1.5" width="20" height="20" rx="10" fill="white"/>
+<path id="Vector" d="M11.5 1.5C5.98 1.5 1.5 5.98 1.5 11.5C1.5 17.02 5.98 21.5 11.5 21.5C17.02 21.5 21.5 17.02 21.5 11.5C21.5 5.98 17.02 1.5 11.5 1.5ZM8.79 15.79L5.2 12.2C4.81 11.81 4.81 11.18 5.2 10.79C5.59 10.4 6.22 10.4 6.61 10.79L9.5 13.67L16.38 6.79C16.77 6.4 17.4 6.4 17.79 6.79C18.18 7.18 18.18 7.81 17.79 8.2L10.2 15.79C9.82 16.18 9.18 16.18 8.79 15.79Z" fill="#673391"/>
+</g>
+<rect x="1" y="1" width="21" height="21" rx="10.5" stroke="white" stroke-opacity="0.5"/>
+</g>
+<defs>
+<clipPath id="clip0_5036_6781">
+<rect x="1.5" y="1.5" width="20" height="20" rx="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>

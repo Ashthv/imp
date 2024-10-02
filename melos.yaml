@@ -1,0 +1,42 @@
+name: tcs_dff_melos
+
+packages:
+  - packages/**
+  - apps/**
+  - features/**
+
+
+command:
+  version:
+    branch: main
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  dart_analyze: dart format . --set-exit-if-changed && flutter analyze --fatal-infos .
+  dart_code_metrics: melos exec -- dart run dart_code_metrics:metrics lib/ --set-exit-on-violation-level=warning
+  analyze: melos run dart_analyze && melos run dart_code_metrics
+  gen_coverage: melos exec -- "\$MELOS_ROOT_PATH/combine_coverage.sh"
+  gen_html: genhtml coverage_report/lcov.info -o coverage_report/html
+  cov_genhtml: melos run gen_coverage && melos run gen_html
+  test:selective_unit_test:
+    run: melos exec --dir-exists="test" -- flutter test --no-pub --coverage
+    description: Run Flutter tests for a specific package in this project.
+    select-package:
+      flutter: true
+      dir-exists: test
+  test:
+    run: melos run test:selective_unit_test --no-select
+    description: Run all Flutter tests in this project.
+  generate:
+    run: melos run generate:dart && melos run generate:flutter
+    description: Generate build for dart and flutter
+  generate:dart:
+    run: melos exec -c 1 --depends-on="build_runner" --no-flutter -- "dart run build_runner build --delete-conflicting-outputs"
+  generate:flutter:
+    run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run build_runner build --delete-conflicting-outputs"
+  generate_code:
+    run: dart run ./packages/tcs_dff_tools/lib/codegen/main.dart 
+  build_output:
+    description: Generate Flutter build
+    run: cd apps/framework_demo && flutter build apk 

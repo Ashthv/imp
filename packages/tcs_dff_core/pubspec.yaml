@@ -1,0 +1,47 @@
+name: tcs_dff_core
+description: Digital foundation framework for developing flutter apps
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: '>=3.16.5'
+dependencies:
+  flutter:
+    sdk: flutter
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  tcs_dff_route:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_route/
+  tcs_dff_design_system:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_design_system/
+  collection: ^1.18.0
+dependency_overrides:
+  tcs_dff_types:
+    path: ../../packages/tcs_dff_types
+  tcs_dff_route:
+    path: ../../packages/tcs_dff_route
+  tcs_dff_design_system:
+    path: ../../packages/tcs_dff_design_system
+  tcs_dff_test:
+    path: ../tcs_dff_test
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mocktail: ^1.0.1
+  tcs_dff_test:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_test/
+flutter: 

@@ -1,0 +1,33 @@
+name: tcs_dff_shared_library
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: '>=3.16.5'
+dependencies:
+  flutter:
+    sdk: flutter
+  mask_text_input_formatter: ^2.8.0
+  intl: ^0.18.0
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  tcs_dff_core:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_core/
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+dependency_overrides:
+  tcs_dff_types:
+    path: ../tcs_dff_types
+  tcs_dff_core:
+    path: ../tcs_dff_core
+flutter: 

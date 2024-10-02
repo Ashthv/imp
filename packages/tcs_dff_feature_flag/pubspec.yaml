@@ -1,0 +1,27 @@
+name: tcs_dff_feature_flag
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: 3.2.3
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  firebase_remote_config: ^4.2.0
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  firebase_core: ^2.15.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+dependency_overrides:
+  tcs_dff_types:
+    path: ../tcs_dff_types
+flutter:
+  uses-material-design: true
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git

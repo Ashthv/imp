@@ -1,0 +1,58 @@
+name: tcs_dff_design_system
+library:
+  name: tcs_dff_design_system
+  exports: [tcs_dff_design_system.dart]
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: '>=3.16.5'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.8
+  video_player: ^2.7.2
+  webview_flutter: ^4.4.2
+  syncfusion_flutter_gauges: ^24.1.44
+  cached_network_image: ^3.3.1
+  lottie: ^3.0.0
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  tcs_dff_route:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_route/
+  tcs_dff_device_feature:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_device_feature/
+  tcs_dff_shared_library:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_shared_library/
+  intl: ^0.18.0
+  go_router: ^14.0.2
+  just_audio: ^0.9.39
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+dependency_overrides:
+  tcs_dff_types:
+    path: ../tcs_dff_types
+  tcs_dff_route:
+    path: ../tcs_dff_route
+  tcs_dff_shared_library:
+    path: ../tcs_dff_shared_library
+  tcs_dff_device_feature:
+    path: ../tcs_dff_device_feature
+flutter:
+  assets: [assets/images/]

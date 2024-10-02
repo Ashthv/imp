@@ -1,0 +1,33 @@
+name: tcs_dff_storage
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: '>=3.16.5'
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  path_provider: ^2.1.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mocktail: ^1.0.1
+  tcs_dff_test: ^0.1.0
+dependency_overrides:
+  tcs_dff_types:
+    path: ../tcs_dff_types
+  tcs_dff_test:
+    path: ../../packages/tcs_dff_test
+flutter: 

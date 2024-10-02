@@ -1,0 +1,69 @@
+name: tcs_dff_device_feature
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: '>=3.16.5'
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  local_auth: ^2.1.7
+  mockito: ^5.4.2
+  file_picker: ^6.0.0
+  permission_handler: ^11.0.1
+  camera: ^0.10.5+5
+  firebase_app_installations: ^0.2.4+6
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  image: ^4.1.3
+  flutter_exif_rotation: ^0.5.1
+  xml: ^6.3.0
+  device_info_plus: ^9.1.1
+  firebase_core: ^2.23.0
+  firebase_messaging: ^14.7.5
+  flutter_local_notifications: ^16.2.0
+  share_plus: ^7.2.1
+  flutter_tts: 4.0.2
+  flutter_contacts: ^1.1.7
+  flutter_image_compress: 2.3.0
+  path_provider: 2.1.3
+
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  tcs_dff_storage:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_storage/
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mocktail: ^1.0.1
+  firebase_core_platform_interface: ^5.0.0
+  firebase_messaging_platform_interface: ^4.2.0
+  tcs_dff_test: ^0.1.0
+  local_auth_android: ^1.0.20
+  local_auth_ios: ^1.1.5
+  local_auth_windows: ^1.0.10
+dependency_overrides:
+  tcs_dff_types:
+    path: ../tcs_dff_types
+  tcs_dff_storage:
+    path: ../tcs_dff_storage
+  tcs_dff_test:
+    path: ../../packages/tcs_dff_test
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.dff.tcs_dff_device_feature
+        pluginClass: TcsDffDeviceFeaturePlugin
+      ios:
+        pluginClass: TcsDffDeviceFeaturePlugin

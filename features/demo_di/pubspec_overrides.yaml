@@ -1,0 +1,24 @@
+# melos_managed_dependency_overrides: tcs_dff_cipher,tcs_dff_core,tcs_dff_design_system,tcs_dff_device_feature,tcs_dff_di,tcs_dff_network,tcs_dff_route,tcs_dff_security,tcs_dff_shared_library,tcs_dff_storage,tcs_dff_types
+dependency_overrides:
+  tcs_dff_cipher:
+    path: ..\\..\\packages\\tcs_dff_cipher
+  tcs_dff_core:
+    path: ..\\..\\packages\\tcs_dff_core
+  tcs_dff_design_system:
+    path: ../../packages/tcs_dff_design_system
+  tcs_dff_device_feature:
+    path: ..\\..\\packages\\tcs_dff_device_feature
+  tcs_dff_di:
+    path: ..\\..\\packages\\tcs_dff_di
+  tcs_dff_network:
+    path: ..\\..\\packages\\tcs_dff_network
+  tcs_dff_route:
+    path: ../../packages/tcs_dff_route
+  tcs_dff_security:
+    path: ..\\..\\packages\\tcs_dff_security
+  tcs_dff_shared_library:
+    path: ..\\..\\packages\\tcs_dff_shared_library
+  tcs_dff_storage:
+    path: ..\\..\\packages\\tcs_dff_storage
+  tcs_dff_types:
+    path: ../../packages/tcs_dff_types

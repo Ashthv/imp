@@ -1,0 +1,24 @@
+name: tcs_dff_cipher
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: https://gitlabyono2.bank.sbi/yono2-0/frontend/flutter/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: '>=3.16.5'
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.dff.cipher
+        pluginClass: CipherPlugin
+      ios:
+        pluginClass: CipherPlugin

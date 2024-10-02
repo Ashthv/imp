@@ -1,0 +1,9 @@
+name: tcs_dff_workspace
+description: Digital foundation framework for developing flutter apps
+homepage: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+version: 0.1.0
+environment:
+  sdk: 3.2.3
+dev_dependencies:
+  melos: ^4.0.0
+publish_to: none

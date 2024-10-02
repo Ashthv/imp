@@ -1,0 +1,48 @@
+# melos_managed_dependency_overrides: analytics,data_pass,demo_cipher,demo_di,device_features,feature_flag,network,security,shared,storage,tcs_dff_analytics,tcs_dff_cipher,tcs_dff_core,tcs_dff_design_system,tcs_dff_device_feature,tcs_dff_di,tcs_dff_network,tcs_dff_route,tcs_dff_security,tcs_dff_shared_library,tcs_dff_storage,tcs_dff_types,uikit
+dependency_overrides:
+  analytics:
+    path: ..\\analytics
+  data_pass:
+    path: ..\\data_pass
+  demo_cipher:
+    path: ..\\demo_cipher
+  demo_di:
+    path: ..\\demo_di
+  device_features:
+    path: ..\\device_features
+  feature_flag:
+    path: ..\\feature_flag
+  network:
+    path: ..\\network
+  security:
+    path: ..\\security
+  shared:
+    path: ..\\shared
+  storage:
+    path: ..\\storage
+  tcs_dff_analytics:
+    path: ..\\..\\packages\\tcs_dff_analytics
+  tcs_dff_cipher:
+    path: ..\\..\\packages\\tcs_dff_cipher
+  tcs_dff_core:
+    path: ..\\..\\packages\\tcs_dff_core
+  tcs_dff_design_system:
+    path: ..\\..\\packages\\tcs_dff_design_system
+  tcs_dff_device_feature:
+    path: ..\\..\\packages\\tcs_dff_device_feature
+  tcs_dff_di:
+    path: ..\\..\\packages\\tcs_dff_di
+  tcs_dff_network:
+    path: ..\\..\\packages\\tcs_dff_network
+  tcs_dff_route:
+    path: ..\\..\\packages\\tcs_dff_route
+  tcs_dff_security:
+    path: ..\\..\\packages\\tcs_dff_security
+  tcs_dff_shared_library:
+    path: ..\\..\\packages\\tcs_dff_shared_library
+  tcs_dff_storage:
+    path: ..\\..\\packages\\tcs_dff_storage
+  tcs_dff_types:
+    path: ..\\..\\packages\\tcs_dff_types
+  uikit:
+    path: ..\\uikit

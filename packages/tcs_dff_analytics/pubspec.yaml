@@ -1,0 +1,35 @@
+name: tcs_dff_analytics
+description: Digital foundation framework for developing flutter apps
+version: 0.1.0
+homepage: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+publish_to: none
+environment:
+  sdk: 3.2.3
+  flutter: 3.16.5
+dependencies:
+  firebase_analytics: ^10.4.5
+  firebase_core: ^2.15.1
+  firebase_crashlytics: ^3.3.6
+  flutter:
+    sdk: flutter
+  tcs_dff_types:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_types/
+  tcs_dff_shared_library:
+    git:
+      url: http://10.10.245.133:443/tcs_sbi_yono/tcs_dff_flutter.git
+      ref: main
+      path: packages/tcs_dff_shared_library/
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mocktail: ^1.0.1
+dependency_overrides:
+  tcs_dff_types:
+    path: ../../packages/tcs_dff_types
+  tcs_dff_shared_library:
+    path: ../../packages/tcs_dff_shared_library
+flutter: 

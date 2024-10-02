@@ -1,0 +1,1 @@
+enum FileType { pdf, jpg, png, docx, doc }
